@@ -15,3 +15,27 @@ const words: string[] = ['Hello', 'TypeScript']
 // Tuple
 const contact: [string, number] = ['Igor', 89998887766]
 
+// Any
+let variable: any = 55
+// ...
+variable = 'new String'
+variable = []
+
+// ========
+function sayMyName(name: string): void {
+    console.log(name)
+}
+sayMyName('Dr. Dre')
+
+// Never
+function throwError(message: string): never {
+    throw new Error(message)
+}
+
+function infinite(): never {
+    while (true) {
+        
+    }
+}
+
+
