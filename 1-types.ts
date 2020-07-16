@@ -38,4 +38,15 @@ function infinite(): never {
     }
 }
 
+// Type
+type Login = string
 
+const login: Login = 'Admin'
+// const login2: Login = 2
+
+type ID = string | number
+const id: ID = '123'
+const id2: ID = 123
+// const id3: ID = true
+
+type SomeType = string | null | undefined
