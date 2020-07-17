@@ -52,3 +52,20 @@ cat.setVoice('Meow')
 console.log(cat)
 // cat.voice    - недоступно напрямую для потомка класса Animal из-за protected.
 //              - можно задать только методом из класса-потомка (setVoice)
+
+// ======================================
+
+abstract class Component {
+    abstract render(): void
+    abstract info(): string
+}
+
+class AppComponent extends Component {
+    render(): void {
+        console.log('Render component')
+    }
+
+    info(): string {
+        return 'This is info'
+    }
+}
